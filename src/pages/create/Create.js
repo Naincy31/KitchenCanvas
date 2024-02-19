@@ -26,7 +26,7 @@ const Create = () => {
             history.push("/")
         }
         
-    }, data)
+    }, [data, history])
 
     const handleAdd = (e) => {
         e.preventDefault();

@@ -12,7 +12,7 @@ const Search = () => {
     const query = queryParams.get('q')
     console.log(query);
 
-    const url = `http://localhost:3000/recipes?q=${query}`
+    const url = `http://localhost:3000/recipes?recipe.title=${query}`;
     const {error, isPending, data} = useFetch(url)
     console.log(data);
 

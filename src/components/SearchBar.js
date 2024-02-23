@@ -8,7 +8,6 @@ const SearchBar = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(term);
         history.push(`/search?q=${term}`)
     }
 

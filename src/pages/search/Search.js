@@ -23,7 +23,7 @@ const Search = () => {
         const queryRef = collection(db, 'recipes');
         const snapshot = await getDocs(queryRef);
         console.log(snapshot);
-        if (snapshot.empty) {
+        if (snapshot.empty){
           setError(`Could not find the recipe containing ${q}`);
           setIsPending(false);
           setData(null);

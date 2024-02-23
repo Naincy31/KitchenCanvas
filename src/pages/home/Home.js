@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import RecipeList from '../../components/RecipeList';
 import { db } from '../../firebase/config';
-import { QuerySnapshot, collection, getDocs, onSnapshot } from 'firebase/firestore';
+import { collection, onSnapshot } from 'firebase/firestore';
 
 //styles
 import './Home.css';
